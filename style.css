@@ -1,5 +1,5 @@
 *{
-    border-radius: 5px;
+    border-radius: 10px;
 }
 body{
     background-image: url("./images/pattern-background-desktop.svg");
@@ -10,6 +10,9 @@ body{
     margin:0;
     padding: 0;
     font-size: 14px;
+    background-color: hsl(225, 100%, 94%);
+    height: 100%;
+    
 }
 
 #main{
@@ -18,36 +21,66 @@ body{
     max-width: 1000px;
     min-width: 300px;
     width:20%;
-    margin:10% auto;
+    margin:60px auto;
     text-align: center;
     background-color: white;
-    border: 0.01em solid black;
+    border: 0;
+
 }
-#main img{
-    border-radius:5px 5px 0px 0px;
+#dance{
+    border-radius:10px 10px 0px 0px;
     width: 100%;
 }
 #the-rest{
-    padding:0% 10%;
+ padding:10%;
+ padding-top: 0;
+
 }
 #plan img{
     object-fit: scale-down;
+    padding-right:15px;
 }
 #plan{
     display:flex;
 }
+#plan a{
+    margin:auto 0 auto auto;
+}
 #text{
     font-size: 12px;
-    margin:0;
-    padding:0;
+    margin:auto 0 auto;
+    padding:0 auto 0 auto;
     white-space: nowrap;
-    margin-right: auto;
 }
-#plan a{
-    text-align: center;
-    margin-left: auto;
+#text p{
+    color:hsl(224, 23%, 55%);
+}
+#proceed{
+    width:100%;
+    height:40px;
+    margin:5px 0 10px 0;
+    border:none;
+    background-color: hsl(245, 75%, 52%);
+    color:white;
+}
+#cancel{
+    border:0;
+    background-color: white;
+    color:hsl(224, 23%, 55%) ;
+}
+
+a:hover{
+    text-decoration: none;
+    color:hsl(224, 23%, 55%);
+}
+#proceed:hover{
+    background-color: hsl(224, 23%, 55%);
+}
+#cancel:hover{
+    color:black;
 }
 footer{
     position: absolute;
     bottom: 0;
+    margin-bottom: auto;
 }
